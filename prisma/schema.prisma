@@ -30,7 +30,7 @@ model Post {
   topImage String?
   published Boolean @default(true)
   authorId String
-  auther User @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  author User @relation(fields: [authorId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
